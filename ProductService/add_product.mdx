@@ -1,0 +1,37 @@
+---
+name: Add a product by store
+route: /add_product
+menu: Product Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Add a product by store
+The store can add product to its catalogue. Store must be login to make request to add product to the catalogue
+
+#### Send Post Request 
+<Code>
+/api/product/create
+</Code>
+
+#### With following JSON data
+```json
+{
+"name": "String",
+"id": "String",
+"price": "float",
+"discount": "float",
+"brand": "String",
+"categories": String[],
+"tags": String[],
+"location": "String",
+"inStock": "int",
+"totalSold": "int",
+"lastStockAddition": "date"
+}
+```
+
+##### Expected Response
+```json
+    "Status": "Product Added Successfully"
+```

@@ -1,0 +1,27 @@
+---
+name: Remove a product by store
+route: /remove_product
+menu: Product Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Add a product by store
+The store can remove product from its catalogue. Store must be login to make request to remove product from the catalogue
+
+#### Send DELETE Request 
+<Code>
+/api/product/
+</Code>
+
+#### With following JSON data
+```json
+{
+"id": "long",
+}
+```
+
+##### Expected Response
+```json
+    "Status": "Product Removed Successfully"
+```
