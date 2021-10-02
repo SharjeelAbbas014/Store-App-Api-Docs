@@ -9,6 +9,7 @@ exports.components = {
   "component---product-service-index-mdx": () => import("./../../../../ProductService/index.mdx" /* webpackChunkName: "component---product-service-index-mdx" */),
   "component---product-service-remove-product-mdx": () => import("./../../../../ProductService/remove_product.mdx" /* webpackChunkName: "component---product-service-remove-product-mdx" */),
   "component---product-service-update-product-mdx": () => import("./../../../../ProductService/update_product.mdx" /* webpackChunkName: "component---product-service-update-product-mdx" */),
+  "component---readme-md": () => import("./../../../../README.md" /* webpackChunkName: "component---readme-md" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */)
 }
 

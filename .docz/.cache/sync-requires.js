@@ -12,6 +12,7 @@ exports.components = {
   "component---product-service-index-mdx": hot(preferDefault(require("C:\\proj\\FYP\\Docs\\ProductService\\index.mdx"))),
   "component---product-service-remove-product-mdx": hot(preferDefault(require("C:\\proj\\FYP\\Docs\\ProductService\\remove_product.mdx"))),
   "component---product-service-update-product-mdx": hot(preferDefault(require("C:\\proj\\FYP\\Docs\\ProductService\\update_product.mdx"))),
+  "component---readme-md": hot(preferDefault(require("C:\\proj\\FYP\\Docs\\README.md"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\proj\\FYP\\Docs\\.docz\\src\\pages\\404.js")))
 }
 

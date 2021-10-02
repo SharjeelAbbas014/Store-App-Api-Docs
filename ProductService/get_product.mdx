@@ -1,17 +1,17 @@
 ---
-name: Get a product by store
+name: Get a product by id
 route: /get_product
 menu: Product Service
 ---
 import { Code } from 'gatsby-theme-docz/src/components/Code'
 import {Playground} from "docz"
 
-# Add a product by store
+# Get a product
 The store and users get product from its catalogue. Store must be login to make request to get product from the catalogue. While users can access product using there apps.
 
 #### Send GET Request 
 <Code>
-/api/product/:id
+/api/product/
 </Code>
 
 #### With following JSON data

@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "Store App Api Docs",
+    "title": "Storeappapidocs",
     "description": "My awesome app using docz",
     "menu": [],
     "version": "1.0.0",
@@ -10,6 +10,21 @@
     "separator": "-"
   },
   "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "C:\\proj\\FYP\\Docs\\README.md",
+        "link": "",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": []
+      }
+    },
     {
       "key": "ProductService/add_product.mdx",
       "value": {
@@ -29,9 +44,9 @@
             "value": "Add a product by store"
           },
           {
-            "slug": "send-post-request",
+            "slug": "send-put-request",
             "depth": 4,
-            "value": "Send Post Request"
+            "value": "Send PUT Request"
           },
           {
             "slug": "with-following-json-data",
@@ -49,7 +64,7 @@
     {
       "key": "ProductService/get_all_products.mdx",
       "value": {
-        "name": "Get a product by store",
+        "name": "Get all product by store",
         "route": "/get_all_products",
         "menu": "Product Service",
         "id": "4dac766bb2e5509608c64364a90ffa35",
@@ -60,9 +75,9 @@
         "slug": "product-service-get-all-products",
         "headings": [
           {
-            "slug": "add-a-product-by-store",
+            "slug": "add-all-product-by-store",
             "depth": 1,
-            "value": "Add a product by store"
+            "value": "Add all product by store"
           },
           {
             "slug": "send-get-request",
@@ -85,7 +100,7 @@
     {
       "key": "ProductService/get_product.mdx",
       "value": {
-        "name": "Get a product by store",
+        "name": "Get a product by id",
         "route": "/get_product",
         "menu": "Product Service",
         "id": "38f3c76af4f06929a55ed4312ea53828",
@@ -96,9 +111,9 @@
         "slug": "product-service-get-product",
         "headings": [
           {
-            "slug": "add-a-product-by-store",
+            "slug": "get-a-product",
             "depth": 1,
-            "value": "Add a product by store"
+            "value": "Get a product"
           },
           {
             "slug": "send-get-request",
@@ -122,7 +137,7 @@
       "key": "ProductService/index.mdx",
       "value": {
         "name": "Check API Availability",
-        "route": "/",
+        "route": "/product",
         "menu": "Product Service",
         "id": "63f8d4e3b581cbaee488d613d0f749e8",
         "filepath": "ProductService/index.mdx",
@@ -150,6 +165,42 @@
       }
     },
     {
+      "key": "ProductService/number_of_products.mdx",
+      "value": {
+        "name": "Get number of products in the store",
+        "route": "/number_of_products",
+        "menu": "Product Service",
+        "id": "11949d85838959506308828ba4029222",
+        "filepath": "ProductService/number_of_products.mdx",
+        "fullpath": "C:\\proj\\FYP\\Docs\\ProductService\\number_of_products.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "product-service-number-of-products",
+        "headings": [
+          {
+            "slug": "add-a-product-by-store",
+            "depth": 1,
+            "value": "Add a product by store"
+          },
+          {
+            "slug": "send-put-request",
+            "depth": 4,
+            "value": "Send PUT Request"
+          },
+          {
+            "slug": "with-following-json-data",
+            "depth": 4,
+            "value": "With following JSON data"
+          },
+          {
+            "slug": "expected-response",
+            "depth": 5,
+            "value": "Expected Response"
+          }
+        ]
+      }
+    },
+    {
       "key": "ProductService/remove_product.mdx",
       "value": {
         "name": "Remove a product by store",
@@ -163,9 +214,9 @@
         "slug": "product-service-remove-product",
         "headings": [
           {
-            "slug": "add-a-product-by-store",
+            "slug": "remove-a-product-by-store",
             "depth": 1,
-            "value": "Add a product by store"
+            "value": "Remove a product by store"
           },
           {
             "slug": "send-delete-request",
@@ -199,9 +250,9 @@
         "slug": "product-service-update-product",
         "headings": [
           {
-            "slug": "add-a-product-by-store",
+            "slug": "update-a-product-by-store",
             "depth": 1,
-            "value": "Add a product by store"
+            "value": "Update a product by store"
           },
           {
             "slug": "send-patch-request",

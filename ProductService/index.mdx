@@ -1,6 +1,6 @@
 ---
 name: Check API Availability
-route: /
+route: /product
 menu: Product Service
 ---
 
@@ -10,10 +10,14 @@ import { Code } from 'gatsby-theme-docz/src/components/Code'
 To check if the service API is running or not
 ##### Send Get Request to
 <Code>
-  /api/product/
+  /api/product/ping
 </Code>
 
 ##### Expected Response
 ```json
-    "Status": "Up and Running"
+{
+  "Message": "Pong",
+  "Status": 200,
+  "Error": "Everything Cool"
+}
 ```
