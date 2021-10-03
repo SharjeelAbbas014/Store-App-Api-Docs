@@ -1,0 +1,28 @@
+---
+name: Decrease Product Count
+route: /decrease_product_count
+menu: Product Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Add a product by store
+The store can decrease the product count by a specific number that is not less than the number of product available.
+
+#### Send POST Request 
+<Code>
+/api/product/decrease_product_count
+</Code>
+
+#### With following JSON data
+```json
+{
+"Id": "String",
+"Decrease_by": "Int"
+}
+```
+
+##### Expected Response
+```json
+    "Status": "Product Count Decreased"
+```

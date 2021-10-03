@@ -1,0 +1,28 @@
+---
+name: Increase Product Count
+route: /increase_product_count
+menu: Product Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Add a product by store
+The store can increase the product count by a specific number 
+
+#### Send POST Request 
+<Code>
+/api/product/decrease_product_count
+</Code>
+
+#### With following JSON data
+```json
+{
+"Id": "String",
+"Increase_by": "Int"
+}
+```
+
+##### Expected Response
+```json
+    "Status": "Product Count Increased"
+```
