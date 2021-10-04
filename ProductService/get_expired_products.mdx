@@ -1,35 +1,32 @@
 ---
-name: Get a product by id
-route: /get_product
+name: Get Expired Products
+route: /get_expired_products
 menu: Product Service
 ---
 import { Code } from 'gatsby-theme-docz/src/components/Code'
 import {Playground} from "docz"
 
-# Get a product
-The store and users get product from its catalogue. Store must be login to make request to get product from the catalogue. While users can access product using there apps.
+# Add a product by store
+The store can get list of all products that are expired. Store must be login to make request to get expired products
 
-## Disclamer
-I am not adding option to retieve all products offered by store because dynamodb has query limit of 100 items. Moreover I don't see any use case where store want to access its millions of product at once. 
-
-#### Send GET Request 
+#### Send PUT Request 
 <Code>
-/api/product/
+/api/product/expired
 </Code>
 
 #### With following JSON data
 ```json
 {
-"id": "long",
 }
 ```
 
 ##### Expected Response
 ```json
 {
+[
     "name": "String",
     "id": "String",
-    "storeid": "String",
+    "storeId": "String",
     "price": "float",
     "discount": "float",
     "brand": "String",
@@ -40,5 +37,6 @@ I am not adding option to retieve all products offered by store because dynamodb
     "ExpiryDate": "2021-10-03 12:13",
     "totalSold": "int",
     "lastStockAddition": "2021-10-03 12:13"
+]
 }
 ```
