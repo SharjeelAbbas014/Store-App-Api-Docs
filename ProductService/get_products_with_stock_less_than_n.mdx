@@ -1,0 +1,44 @@
+---
+name: Get product with less or equal stock than n
+route: /get_products_with_stock_less_than_n
+menu: Product Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+#  Get product with less stock than n
+The store can get all the products that have stock less or equal to the number specified
+
+#### Send GET Request 
+<Code>
+/api/product/stock_less
+</Code>
+
+#### With following JSON data
+```json
+{
+"Number_of_products": "int",
+}
+```
+
+##### Expected Response
+```json
+[
+{
+    "name": "String",
+    "id": "String",
+    "storeid": "String",
+    "price": "float",
+    "discount": "float",
+    "brand": "String",
+    "categories": String[],
+    "tags": String[],
+    "location": "String",
+    "inStock": "int",
+    "ExpiryDate": "2021-10-03 12:13",
+    "totalSold": "int",
+    "lastStockAddition": "2021-10-03 12:13"
+}
+]
+```
+
