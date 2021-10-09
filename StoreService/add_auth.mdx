@@ -1,0 +1,25 @@
+---
+name: Add auths
+route: /add_auths
+menu: Store Service
+---
+# Add auths 
+The store can add auths to access Store Service.
+
+#### Send POST Request 
+<Code>
+/api/auths/
+</Code>
+
+#### With following JSON data
+```json
+{
+        "username": "String",
+        "lastPasswordEdit": "2021-10-07T00:00:00.000Z",
+        "storeId": "String",
+        "password": "String"
+}
+```
+
+##### Expected Response
+"Status": "Auth Added Successfully"
