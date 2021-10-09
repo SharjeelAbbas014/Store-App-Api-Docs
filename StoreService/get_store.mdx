@@ -1,0 +1,33 @@
+---
+name: Get store
+route: /get_store
+menu: Store Service
+---
+
+# Get Store 
+
+
+#### Send GET Request 
+<Code>
+/api/stores/get_store
+</Code>
+
+#### With following JSON data
+```json
+{
+  "_id": "String"
+}
+```
+
+##### Expected Response
+```json
+    {
+        "_id": "String",
+        "name": "String",
+        "totalNumberOfProducts": "String",
+        "memberSince": "String",
+        "imageUrl": "String",
+        "location": "String",
+        "city": "String"
+    }
+```
