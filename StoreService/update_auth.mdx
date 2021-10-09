@@ -1,0 +1,25 @@
+---
+name: Update auth
+route: /update_auth
+menu: Store Service
+---
+# Update auth 
+Updates specific auth by id.
+
+#### Send PATCH Request 
+<Code>
+/api/auths/
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String",
+   "username":"String"
+}
+```
+
+##### Expected Response
+```
+"Status": "Auth Updated Successfully"
+```
