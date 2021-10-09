@@ -1,0 +1,27 @@
+---
+name: Add Store
+route: /add_store
+menu: Store Service
+---
+# Add Store 
+User can add new stores.
+
+#### Send POST Request 
+<Code>
+/api/stores/
+</Code>
+
+#### With following JSON data
+```json
+{
+        "name": "String",
+        "totalNumberOfProducts": "String",
+        "memberSince": "String",
+        "imageUrl": "String",
+        "location": "String",
+        "city": "String"
+}
+```
+
+##### Expected Response
+"Status": "Store Added Successfully"
