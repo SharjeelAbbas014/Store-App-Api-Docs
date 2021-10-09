@@ -1,0 +1,30 @@
+---
+name: Get auth
+route: /get_auth
+menu: Store Service
+---
+# Get auth 
+Gets specific auth by id.
+
+#### Send GET Request 
+<Code>
+/api/auths/get_auth
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```json
+    {
+        "_id": "String",
+        "username": "String",
+        "lastPasswordEdit": "2021-10-07T00:00:00.000Z",
+        "storeId": "String",
+        "password": "String"
+    }
+```
