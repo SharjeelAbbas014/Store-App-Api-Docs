@@ -1,0 +1,25 @@
+---
+name: Update store
+route: /update_store
+menu: Store Service
+---
+# Update store 
+Updates specific store by id.
+
+#### Send PATCH Request 
+<Code>
+/api/stores/
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String",
+   "memberSince":"String"
+}
+```
+
+##### Expected Response
+```
+"Status": "Store Updated Successfully"
+```
