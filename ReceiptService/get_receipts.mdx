@@ -1,0 +1,42 @@
+---
+name: Get receipt
+route: /get_receipt
+menu: Receipt Service
+---
+# Get receipt 
+Gets specific receipt by id.
+
+#### Send POST Request 
+<Code>
+/api/receipts/get_receipt
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```json
+    {
+        "_id": "String",
+        "emp_id": "String",
+        "receipt_date": "2021-10-07T00:00:00.000Z",
+        "amount": "String",
+        "narration": "String",
+        "products":[{
+            "product_name":"String",
+            "price":"String",
+            "quantity":"String",
+            "discount":"String",
+            "categories":[
+            "String"
+            ],
+            "subCategories":[
+            "String"
+            ]
+        }]
+    }
+```
