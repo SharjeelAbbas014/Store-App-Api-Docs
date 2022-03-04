@@ -1,0 +1,32 @@
+---
+name: Get employee
+route: /get_employee
+menu: Store Service
+---
+# Get employee 
+Gets specific employee by id.
+
+#### Send POST Request 
+<Code>
+/api/employees/get_employee
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```json
+    {
+        "_id": "String",
+        "emp_name": "String",
+        "joining_date": "2021-10-07T00:00:00.000Z",
+        "store_id": "String",
+        "cnic": "String",
+        "totalSales": "String",
+        "phone": "String"
+    }
+```
