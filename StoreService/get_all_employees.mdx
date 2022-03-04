@@ -1,0 +1,33 @@
+---
+name: Get all employees
+route: /get_all_employees
+menu: Store Service
+---
+# Get all employees
+Shows all the employees available
+
+#### Send GET Request 
+<Code>
+/api/employees/
+</Code>
+
+#### With following JSON data
+```json
+{
+}
+```
+
+##### Expected Response
+```json
+    [
+    {
+        "_id": "String",
+        "emp_name": "String",
+        "joining_date": "2021-10-07T00:00:00.000Z",
+        "store_id": "String",
+        "cnic": "String",
+        "totalSales": "String",
+        "phone": "String"
+    }
+]
+```
