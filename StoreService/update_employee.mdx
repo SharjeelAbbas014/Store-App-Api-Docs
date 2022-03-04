@@ -1,0 +1,30 @@
+---
+name: Update employee
+route: /update_employee
+menu: Store Service
+---
+# Update employee 
+Updates specific employee by id.
+
+#### Send PATCH Request 
+<Code>
+/api/employees/
+</Code>
+
+#### With following JSON data
+```json
+{
+    "_id": "String",
+    "emp_name": "String",
+    "joining_date": "2021-10-07T00:00:00.000Z",
+    "store_id": "String",
+    "cnic": "String",
+    "totalSales": "String",
+    "phone": "String"
+}
+```
+
+##### Expected Response
+```
+"Status": "Employee Updated Successfully"
+```
