@@ -1,0 +1,30 @@
+---
+name: Add employee
+route: /add_employee
+menu: Store Service
+---
+# Add employee
+The store can add employees to the Store.
+
+#### Send POST Request 
+<Code>
+/api/employees/
+</Code>
+
+#### With following JSON data
+```json
+{
+        "emp_name": "String",
+        "joining_date": "2021-10-07T00:00:00.000Z",
+        "store_id": "String",
+        "cnic": "String",
+        "totalSales": "String".
+        "phone": "String"
+}
+```
+
+##### Expected Response
+
+```
+"Status": "Employee Added Successfully"
+```
