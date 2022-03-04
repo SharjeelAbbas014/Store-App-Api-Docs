@@ -1,0 +1,43 @@
+---
+name: Get all bills
+route: /get_all_bills
+menu: Store Service
+---
+# Get all bills 
+Shows all the bills available
+
+#### Send GET Request 
+<Code>
+/api/bills/
+</Code>
+
+#### With following JSON data
+```json
+{
+}
+```
+
+##### Expected Response
+```json
+    [
+    {
+        "_id": "String",
+        "user_id": "String",
+        "bill_date": "2021-10-07T00:00:00.000Z",
+        "amount": "String",
+        "narration": "String",
+        "products":[{
+            "product_name":"String",
+            "price":"String",
+            "quantity":"String",
+            "discount":"String",
+            "categories":[
+            "String"
+            ],
+            "subCategories":[
+            "String"
+            ]
+        }]
+    }
+]
+```
