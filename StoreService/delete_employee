@@ -1,0 +1,24 @@
+---
+name: Delete employee
+route: /delete_employee
+menu: Store Service
+---
+# Delete employee 
+Deletes specific employee by id.
+
+#### Send DELETE Request 
+<Code>
+/api/employees/
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```
+"Status": "Employee Deleted Successfully"
+```
