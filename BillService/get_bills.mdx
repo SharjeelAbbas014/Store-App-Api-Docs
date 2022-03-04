@@ -1,0 +1,42 @@
+---
+name: Get bill
+route: /get_bill
+menu: Bill Service
+---
+# Get bill 
+Gets specific bill by id.
+
+#### Send POST Request 
+<Code>
+/api/bills/get_bill
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```json
+    {
+        "_id": "String",
+        "user_id": "String",
+        "bill_date": "2021-10-07T00:00:00.000Z",
+        "amount": "String",
+        "narration": "String",
+        "products":[{
+            "product_name":"String",
+            "price":"String",
+            "quantity":"String",
+            "discount":"String",
+            "categories":[
+            "String"
+            ],
+            "subCategories":[
+            "String"
+            ]
+        }]
+    }
+```
