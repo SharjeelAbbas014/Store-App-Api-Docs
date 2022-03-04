@@ -1,0 +1,24 @@
+---
+name: Delete receipt
+route: /delete_receipt
+menu: Receipt Service
+---
+# Delete receipt 
+Deletes specific receipt by id.
+
+#### Send DELETE Request 
+<Code>
+/api/receipts/
+</Code>
+
+#### With following JSON data
+```json
+{
+   "_id": "String"
+}
+```
+
+##### Expected Response
+```
+"Status": "Receipt Deleted Successfully"
+```
