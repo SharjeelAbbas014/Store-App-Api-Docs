@@ -3,16 +3,28 @@ name: Running The Project
 route: /startingproject
 menu: Running The Project
 ---
-import { Code } from 'gatsby-theme-docz/src/components/Code'
-import {Playground} from "docz"
+
+import { Code } from "gatsby-theme-docz/src/components/Code";
+import { Playground } from "docz";
 
 # Running The Project
+
 You should have installed [Docker](https://www.docker.com/products/docker-desktop) for any of these things to work
 
 After installing docker clone this [repo](https://github.com/SharjeelAbbas014/Store-App-Backend)
 
-Open the project folder in terminal and run the following command
+Download [Skaffold](https://storage.googleapis.com/skaffold/releases/latest/skaffold-windows-amd64.exe)
+
+Rename downloaded file to Skaffold.exe and place Skaffold anywhere on your system and add that path to your system path
+
+Run this command to install ingress-nginx
 
 <Code>
-docker-compose up --build
-</Code>
+helm upgrade --install ingress-nginx ingress-nginx \
+  --repo https://kubernetes.github.io/ingress-nginx \
+  --namespace ingress-nginx --create-namespace
+<Code>
+
+Open the project folder in terminal and run the following command
+
+<Code>skafolld dev</Code>
