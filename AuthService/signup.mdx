@@ -1,0 +1,31 @@
+---
+name: Signup User
+route: /signup_user
+menu: Auth Service
+---
+
+# Signup User
+
+User, Admin of Store and Employee account can be created
+
+#### Send POST Request
+
+<Code>/api/users/signup</Code>
+
+#### With following JSON data
+
+```json
+{
+  "roleName": "Don't include for customer account|EMP|ADMIN",
+  "email": "string",
+  "password": "string"
+}
+```
+
+##### Expected Response
+
+```json
+{
+  "message": "User Created"
+}
+```

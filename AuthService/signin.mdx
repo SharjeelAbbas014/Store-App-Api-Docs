@@ -1,0 +1,31 @@
+---
+name: Signin User
+route: /signin_user
+menu: Auth Service
+---
+
+# Signin User
+
+User, Admin of Store and Employee account can signed in and set cookie with JWT in it. Follow up request will use this token
+
+#### Send POST Request
+
+<Code>/api/users/signin</Code>
+
+#### With following JSON data
+
+```json
+{
+  "roleName": "Don't include for customer account|EMP|ADMIN",
+  "email": "string",
+  "password": "string"
+}
+```
+
+##### Expected Response
+
+```json
+{
+  "message": "User Logged In"
+}
+```
