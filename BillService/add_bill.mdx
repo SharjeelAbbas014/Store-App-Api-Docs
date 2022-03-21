@@ -3,33 +3,32 @@ name: Add bill
 route: /add_bill
 menu: Bill Service
 ---
+
 # Add bill
+
 The customer can add bills.
 
-#### Send POST Request 
-<Code>
-/api/bills/
-</Code>
+#### Send POST Request
+
+<Code>/api/bills/</Code>
 
 #### With following JSON data
+
 ```json
 {
-        "user_id": "String",
-        "bill_date": "2021-10-07T00:00:00.000Z",
-        "amount": "String",
-        "narration": "String",
-        "products":[{
-            "product_name":"String",
-            "price":"String",
-            "quantity":"String",
-            "discount":"String",
-            "categories":[
-            "String"
-            ],
-            "subCategories":[
-            "String"
-            ]
-        }]
+  "bill_date": "2021-10-07T00:00:00.000Z",
+  "amount": "String",
+  "narration": "String",
+  "products": [
+    {
+      "product_name": "String",
+      "price": "String",
+      "quantity": "String",
+      "discount": "String",
+      "categories": ["String"],
+      "subCategories": ["String"]
+    }
+  ]
 }
 ```
 
