@@ -3,39 +3,42 @@ name: Get all receipts
 route: /get_all_receipts
 menu: Receipt Service
 ---
-# Get all receipts
-Shows all the receipts available
 
-#### Send GET Request 
-<Code>
-/api/receipts/
-</Code>
+# Get all receipts
+
+Shows all the receipts available of store
+
+#### Send GET Request
+
+<Code>/api/receipts/</Code>
 
 #### With following JSON data
+
 ```json
 {
+  "store_id": "string"
 }
 ```
 
 ##### Expected Response
+
 ```json
+{
+  "_id": "String",
+  "emp_id": "String",
+  "receipt_date": "2021-10-07T00:00:00.000Z",
+  "amount": "String",
+  "narration": "String",
+  "admin_id": "String",
+  "products": [
     {
-        "_id": "String",
-        "emp_id": "String",
-        "receipt_date": "2021-10-07T00:00:00.000Z",
-        "amount": "String",
-        "narration": "String",
-        "products":[{
-            "product_name":"String",
-            "price":"String",
-            "quantity":"String",
-            "discount":"String",
-            "categories":[
-            "String"
-            ],
-            "subCategories":[
-            "String"
-            ]
-        }]
+      "product_name": "String",
+      "price": "String",
+      "quantity": "String",
+      "discount": "String",
+      "categories": ["String"],
+      "subCategories": ["String"]
     }
+  ]
+}
 ```
