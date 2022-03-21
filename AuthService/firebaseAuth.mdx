@@ -1,0 +1,31 @@
+---
+name: Firebase User
+route: /firebase_user
+menu: Auth Service
+---
+
+# Signup User Firebase
+
+Authenticate user with firebase and send data to keep in sync with the server and get cookie to communicate with all the services
+
+#### Send POST Request
+
+<Code>/api/users/firebase</Code>
+
+#### With following JSON data
+
+```json
+{
+  "method": "PHONE|EMAIL|GOOGLE|FACEBOOK",
+  "email": "string",
+  "password": "string"
+}
+```
+
+##### Expected Response
+
+```json
+{
+  "message": "User Created"
+}
+```
