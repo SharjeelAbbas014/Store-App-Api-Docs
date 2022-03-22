@@ -17,6 +17,10 @@ Download [Skaffold](https://storage.googleapis.com/skaffold/releases/latest/skaf
 
 Rename downloaded file to Skaffold.exe and place Skaffold anywhere on your system and add that path to your system path
 
+Download [Helm](https://get.helm.sh/helm-v3.8.1-windows-amd64.zip)
+
+Extact helm, get helm.exe and paste it in to same folder you pasted skaffold.exe
+
 Run this command to install ingress-nginx
 
 helm upgrade --install ingress-nginx ingress-nginx --repo https://kubernetes.github.io/ingress-nginx --namespace ingress-nginx --create-namespace
