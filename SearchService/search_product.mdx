@@ -1,0 +1,70 @@
+---
+name: Search Product
+route: /search_product
+menu: Search Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# SEARCH SERVICE NOT COMPLETED YET
+# Search a product
+You can search the product by name, categories, Brand and Tags
+
+#### Send Post Request 
+<Code>
+/api/search/
+</Code>
+
+#### With following JSON data
+```json
+{
+    "Query": "shampoo"
+}
+```
+
+##### Expected Response
+```json
+    {
+    "_shards": {
+        "failed": 0,
+        "skipped": 0,
+        "successful": 1,
+        "total": 1
+    },
+    "hits": {
+        "hits": [
+            {
+                "_id": "tjkjk",
+                "_index": "products",
+                "_score": 0.8754687,
+                "_source": {
+                    "Brand": "Coka",
+                    "Categories": "asdasd",
+                    "Name": "Shampoo",
+                    "Storeid": "t",
+                    "Tags": "asdasd"
+                }
+            },
+            {
+                "_id": "taskj",
+                "_index": "products",
+                "_score": 0.77644765,
+                "_source": {
+                    "Brand": "Coka",
+                    "Categories": "asdasd",
+                    "Name": "Shampood",
+                    "Storeid": "t",
+                    "Tags": "asdasd"
+                }
+            }
+        ],
+        "max_score": 0.8754687,
+        "total": {
+            "relation": "eq",
+            "value": 2
+        }
+    },
+    "timed_out": false,
+    "took": 4
+}
+```
