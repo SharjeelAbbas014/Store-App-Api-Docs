@@ -1,0 +1,30 @@
+---
+name: Update suggestion
+route: /update_suggestion
+menu: Suggestion Service
+---
+# Update suggestion
+Updates specific suggestion by id.
+
+#### Send PATCH Request
+<Code>
+/api/suggestions/
+</Code>
+
+#### With following JSON data
+```json
+{
+    "_id": "String",
+    "user_id": "String",
+    "suggestion_date": "2021-10-07T00:00:00.000Z",
+    "message": "String",
+    "type": "String",
+    "store_id": "String",
+
+}
+```
+
+##### Expected Response
+```
+"Status": "Suggestion Updated Successfully"
+```

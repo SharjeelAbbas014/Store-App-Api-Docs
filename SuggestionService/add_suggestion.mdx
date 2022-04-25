@@ -1,0 +1,29 @@
+---
+name: Add suggestion
+route: /add_suggestion
+menu: Suggestion Service
+---
+# Add suggestion
+The cashier can add suggestions.
+
+#### Send POST Request
+<Code>
+/api/suggestions/
+</Code>
+
+#### With following JSON data
+```json
+{
+        "user_id": "String",
+        "suggestion_date": "2021-10-07T00:00:00.000Z",
+        "message": "String",
+        "type": "String",
+        "store_id": "String",
+}
+```
+
+##### Expected Response
+
+```
+"Status": "Suggestion Added Successfully"
+```
