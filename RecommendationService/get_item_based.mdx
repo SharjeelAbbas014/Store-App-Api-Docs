@@ -1,0 +1,32 @@
+---
+name: Item Based Collaboative Filtering
+route: /get_item_based
+menu: Recommendation Service
+---
+
+# Get Item Based Recommendation
+
+#### Send GET Request
+
+<Code>/api/recommendationService/get_item_based</Code>
+
+#### With following JSON data
+
+```json
+{
+  "product_id": "string"
+}
+```
+
+##### Expected Response
+
+```json
+{
+  {
+    "recommended_products": [
+        6845,
+        5585660
+    ]
+  }
+}
+```
