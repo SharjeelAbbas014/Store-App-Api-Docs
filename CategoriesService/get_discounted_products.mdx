@@ -1,0 +1,58 @@
+---
+name: Get Discounted Products
+route: /get_discounted_products
+menu: Categories Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Get Discounted Products
+Get Discounted Product of the store
+
+#### Send POST Request 
+<Code>
+/api/categories/discounted_products
+</Code>
+
+#### With following JSON data
+```json
+{
+ "store_id": "string"
+}
+```
+
+##### Expected Response
+```json
+    [
+    {
+        "Id": "ssss",
+        "Name": "newName",
+        "Price": "2",
+        "InStock": "2",
+        "Discount": "2",
+        "Categories": [
+            "asdkl",
+            "asdsa"
+        ],
+        "Tags": [
+            "asdas"
+        ],
+        "_id": "629996574dba078e0dccfa78"
+    },
+    {
+        "Id": "ssssjjs",
+        "Name": "newName",
+        "Price": "2",
+        "InStock": "2",
+        "Discount": "10",
+        "Categories": [
+            "asdkl",
+            "asdsa"
+        ],
+        "Tags": [
+            "asdas"
+        ],
+        "_id": "62999ffcc8a4ba09dc9a9c44"
+    }
+]
+```

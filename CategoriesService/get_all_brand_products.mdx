@@ -1,0 +1,45 @@
+---
+name: Get All Brand Products
+route: /get_all_brand_products
+menu: Categories Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Get All Brand List
+Get all specific brand products in a store
+
+#### Send GET Request 
+<Code>
+/api/categories/brands_products/
+</Code>
+
+#### With following JSON data
+```json
+{
+ "store_id": "string",
+ "brand": "string"
+}
+```
+
+##### Expected Response
+```json
+[
+    {
+        "Id": "ssssjjs",
+        "Name": "newName",
+        "Price": "2",
+        "InStock": "2",
+        "Discount": "10",
+        "Categories": [
+            "asdkl",
+            "asdsa"
+        ],
+        "Tags": [
+            "asdas"
+        ],
+        "Brand": "Coke",
+        "_id": "6299a614320f47a1ba3320db"
+    }
+]
+```
