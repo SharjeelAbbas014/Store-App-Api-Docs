@@ -1,0 +1,27 @@
+---
+name: Get Categories Name
+route: /get_categories_name
+menu: Categories Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Get Categories Name
+Get names of already stored categories of the logged in store
+
+#### Send POST Request 
+<Code>
+/api/categories/names
+</Code>
+
+#### With following JSON data
+```json
+{
+ "store_id": "string"
+}
+```
+
+##### Expected Response
+```json
+    ["cat1", "cat2"]
+```

@@ -1,0 +1,76 @@
+---
+name: Get All Product By Categories
+route: /get_all_product_by_categories
+menu: Categories Service
+---
+import { Code } from 'gatsby-theme-docz/src/components/Code'
+import {Playground} from "docz"
+
+# Get All Product By Categories
+Get all products in a store with product as wrapped in the categories
+
+#### Send GET Request 
+<Code>
+/api/categories/
+</Code>
+
+#### With following JSON data
+```json
+{
+ "store_id": "string"
+}
+```
+
+##### Expected Response
+```json
+[
+    {
+        "_id": "629991f68e1b374bedfc239d",
+        "categories": [
+            {
+                "category_name": "jaskd",
+                "products": [
+                    {
+                        "Id": "String",
+                        "Name": "String",
+                        "Price": "0",
+                        "InStock": "2",
+                        "Discount": "0",
+                        "Categories": [
+                            "jaskd"
+                        ],
+                        "Tags": [
+                            "aksdsd"
+                        ],
+                        "_id": "629991f68e1b374bedfc239f"
+                    }
+                ],
+                "_id": "629991f68e1b374bedfc239e"
+            },
+            {
+                "category_name": "asdkl",
+                "products": [
+                    {
+                        "Id": "ssss",
+                        "Name": "newName",
+                        "Price": "2",
+                        "InStock": "2",
+                        "Discount": "2",
+                        "Categories": [
+                            "asdkl",
+                            "asdsa"
+                        ],
+                        "Tags": [
+                            "asdas"
+                        ],
+                        "_id": "629996574dba078e0dccfa78"
+                    }
+                ],
+                "_id": "629996574dba078e0dccfa77"
+            }
+        ],
+        "store_id": "sharjeela@gmail.com",
+        "__v": 1
+    }
+]
+```
