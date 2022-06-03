@@ -1,0 +1,44 @@
+---
+name: Get all Emp receipts
+route: /emp_receipts
+menu: Receipt Service
+---
+
+# Get all Emp receipts
+
+Shows all the receipts available of store
+
+#### Send POST Request
+
+<Code>/api/receipts/emp_receipts</Code>
+
+#### With following JSON data
+
+```json
+{
+  "emp_id": "string"
+}
+```
+
+##### Expected Response
+
+```json
+[{
+  "_id": "String",
+  "emp_id": "String",
+  "receipt_date": "2021-10-07T00:00:00.000Z",
+  "amount": "String",
+  "narration": "String",
+  "admin_id": "String",
+  "products": [
+    {
+      "product_name": "String",
+      "price": "String",
+      "quantity": "String",
+      "discount": "String",
+      "categories": ["String"],
+      "subCategories": ["String"]
+    }
+  ]
+}]
+```
