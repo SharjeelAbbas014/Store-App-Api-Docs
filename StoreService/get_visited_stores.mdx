@@ -1,0 +1,31 @@
+---
+name: Get visited stores
+route: /get_visited_stores
+menu: Store Service
+---
+
+# Get Visited Stores
+Gets visited stores by user_id.
+
+#### Send GET Request 
+<Code>
+/api/stores/get_visited_stores
+</Code>
+
+#### With following JSON data
+```json
+{
+}
+```
+
+##### Expected Response
+```json
+    [
+        {
+        "_id": "String",
+        "user_id": "String",
+        "date": "2021-10-07T00:00:00.000Z",
+        "store_id": "String"
+        }
+    ]
+```
